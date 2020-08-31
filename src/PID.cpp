@@ -31,7 +31,7 @@ double PID::total_error()
   double error_sum = p_error + i_error + d_error;
   error_sum = error_sum > max_out ? max_out : error_sum; // min, max threshold
   error_sum = error_sum < min_out ? min_out : error_sum; // min, max threshold
-  return error_sum;                                      // TODO: Add your total error calc here!
+  return error_sum;                                      
 }
 void PID::set_gain(vector<double> gain)
 {
